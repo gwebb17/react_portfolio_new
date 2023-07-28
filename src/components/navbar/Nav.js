@@ -1,6 +1,8 @@
 import navBannerImage from "../../utils";
 import styles from "./Nav.css";
 
+const linksForButtons = ["top", "about", "resume"];
+
 const Nav = () => {
 
     const navScrollPoints={
@@ -18,41 +20,25 @@ const Nav = () => {
         }
     }
 
-    const testArray = ["Home", "About", "Resume"]
-    const link_ids = ["home_section_id", "about_section_id", "resume_section_id"]
-
-    const linksToMap = (links, ids) => {
-        return links.map(text => <button onClick={()=> scrollTo(ids)}>{text}</button>);
+    const linksToMap = (links) => {
+        return links.map(text => <button className="links_buttons" onClick={()=>scrollTo()}>{text}</button>);
     }
 
     function scrollTo(linkId) {    
         document.getElementById(linkId).scrollIntoView();
     }
 
-
     return (
-        <div className="nav__outer_container">
+        <>
             <div className="nav__background_image">
-                <img src={process.env.PUBLIC_URL + "/stars.jfif"} alt="navbar background image" />
-            </div>
-            
-            <div className="nav__links_container">
-                {linksToMap(testArray, link_ids)}
-            </div>
 
-            {/*these need to be moved to a main Content component and referenced from this component somehow*/}
-            <div className="home_section_container" id="home_section_id">
-                hihiihiihi
             </div>
-
-            <div className="about_section_container" id="about_section_id">
-                hihiihiihi
+            <div className="nav__outer_container">
+                <div className="nav__links_container">
+                    {linksToMap(linksForButtons)}
+                </div>
             </div>
-
-            <div className="resume_section_container" id="resume_section_id">
-                hihiihiihi
-            </div>
-        </div>    
+        </> 
     );
 }
 
