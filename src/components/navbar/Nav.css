@@ -21,6 +21,30 @@
     font-weight: 500;
 }
 
+.links_buttons_hovering{
+    margin-right: 10px;
+    margin-left: 10px;
+    height: 60px;
+    width: 150px;
+    border: 3px solid grey;
+    border-radius: 4px;
+    font-family: 'Exo', sans-serif;
+    font-weight: 500;
+}
+
+.links_buttons_hovering:hover{
+    margin-right: 10px;
+    margin-left: 10px;
+    height: 60px;
+    width: 150px;
+    border: 3px solid grey;
+    border-radius: 4px;
+    font-family: 'Exo', sans-serif;
+    font-weight: 500;
+    color: floralwhite;
+    background-color: black;
+}
+
 .nav__background_image{
     height: 150px;
     width: 100%;
