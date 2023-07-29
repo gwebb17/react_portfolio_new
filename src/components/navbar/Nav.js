@@ -1,11 +1,12 @@
 import styles from './Nav.css';
-import { useState, useRef } from 'react';
-
-const linksForButtons = ["top", "about", "resume", "links"];
+import { useState, useRef, useContext } from 'react';
+import AppContext from '../../AppContext.js';
 
 const Nav = () => {
+    // const aboutRef  = useContext(AppContext);
+    const linksForButtons = ["top", "about", "resume", "contact"];
+    // const linkIds = [aboutRef];
     const [isHovering, setIsHovering] = useState(false);    //might use at some point look up onMouseenter/Leave React if needed
-    const aboutRef = useRef(); //pass to element in About.js perhaps to conditionally scroll to links
 
     const linksToMap = (links) => {
         return links.map(text => 
@@ -15,10 +16,13 @@ const Nav = () => {
             </button>);
     }
 
-    function scrollTo(linkId) {    
-        let idName = [];
+    //pass linkIds below?
+    function scrollTo() {    
 
-        document.getElementById(linkId).scrollIntoView();
+
+        //temp works:
+        const target = document.getElementById('about__id');
+        target.scrollIntoView();
     }
 
     return (

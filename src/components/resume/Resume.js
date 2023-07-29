@@ -1,32 +1,13 @@
-import React from 'react';
-import { useState, useRef, useContext } from 'react';
-import styles from './About.css';
-import { githubIconWhite } from '../../utils';
+import styles from './Resume.css';
 import AppContext from '../../AppContext.js';
 
-
-const About = () => {
+const Resume = () => {
     return (
-        <div className='about__outer_container'>
-            <div className='about__top_row_container' id='about__id'>
-                <div className='about__text_image'>
-                    <img src={process.env.PUBLIC_URL + "/press_photo_2.jpg"} alt='about section image'/>
-                </div>
-                <div className='about__icons_container'>
-                    <div className='about__top_row_link_one'>
-                        <a href="https://github.com/gwebb17?tab=repositories"><img src={process.env.PUBLIC_URL + "/github_icon.png"} alt='about section image'/></a>                 
-                    </div>
-                    <div className='about__top_row_link_two'>
-                        <a href="https://funkyouter.space"><img src={process.env.PUBLIC_URL + "/something"} alt='FOS logo'/></a>
-                    </div>
-                </div>
-                           
-            </div>        
-            
-            <h2 className='about__header_text'>
-                ABOUT
+        <div className='resume__outer_container'>
+            <h2 className='resume__header_text'>
+                RESUME
             </h2>
-            <p className='about__text'>
+            <p className='resume__text'>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                 Vestibulum sed arcu non odio euismod lacinia. Nunc vel risus commodo viverra maecenas accumsan lacus. Nunc id cursus metus aliquam. 
                 Ac odio tempor orci dapibus ultrices in iaculis nunc. Lectus sit amet est placerat. Sed tempus urna et pharetra pharetra massa massa. 
@@ -38,7 +19,7 @@ const About = () => {
                 pharetra. Pellentesque habitant morbi tristique senectus et.
             </p>
         </div>
-    );
+    )
 }
 
-export default About;
+export default Resume;
