@@ -8,19 +8,18 @@ import AppContext from '../../AppContext.js';
 const About = () => {
     return (
         <div className='about__outer_container'>
-            <div className='about__top_row_container' id='about__id'>
+            <div className='about__top_row_container'>
                 <div className='about__text_image'>
                     <img src={process.env.PUBLIC_URL + "/press_photo_2.jpg"} alt='about section image'/>
                 </div>
                 <div className='about__icons_container'>
-                    <div className='about__top_row_link_one'>
+                    <div className='about__top_row_link_one' id='about__id'>
                         <a href="https://github.com/gwebb17?tab=repositories"><img src={process.env.PUBLIC_URL + "/github_icon.png"} alt='about section image'/></a>                 
                     </div>
                     <div className='about__top_row_link_two'>
                         <a href="https://funkyouter.space"><img src={process.env.PUBLIC_URL + "/something"} alt='FOS logo'/></a>
                     </div>
                 </div>
-                           
             </div>        
             
             <h2 className='about__header_text'>
