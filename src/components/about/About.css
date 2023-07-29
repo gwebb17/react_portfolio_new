@@ -1,0 +1,36 @@
+.about__outer_container{
+    background-color: #28282B;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.about__top_row_container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.about__top_row_link_one{
+
+}
+
+.about__header_text{
+    font-weight: 200;
+    font-family: 'Exo', sans-serif;
+    font-size: 34px;
+    color: floralwhite;
+}
+
+.about__text_image img{
+    width: 50%;
+}
+
+.about__text{
+    font-family: 'Exo', sans-serif;
+    font-weight: 500;
+    color: floralwhite;
+}

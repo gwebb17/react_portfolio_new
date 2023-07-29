@@ -1,27 +1,10 @@
-import navBannerImage from "../../utils";
-import styles from "./Nav.css";
+import styles from './Nav.css';
 
-const linksForButtons = ["top", "about", "resume"];
+const linksForButtons = ["top", "about", "resume", "links"];
 
 const Nav = () => {
-
-    const navScrollPoints={
-        top : {
-            id: 'insert class or id for top scroll here',
-            text: 'Home'
-        },
-        about : {
-            id : 'something',
-            text: 'About',
-        },
-        resume : {
-            id : 'something else',
-            text: 'resume'
-        }
-    }
-
     const linksToMap = (links) => {
-        return links.map(text => <button className="links_buttons" onClick={()=>scrollTo()}>{text}</button>);
+        return links.map(text => <button className="links_buttons" onClick={()=>scrollTo()}>{text.toUpperCase()}</button>);
     }
 
     function scrollTo(linkId) {    
@@ -33,8 +16,8 @@ const Nav = () => {
             <div className="nav__background_image">
 
             </div>
-            <div className="nav__outer_container">
-                <div className="nav__links_container">
+            <div className="nav__links_container">
+                <div className="nav__links">
                     {linksToMap(linksForButtons)}
                 </div>
             </div>

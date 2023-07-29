@@ -9,8 +9,10 @@ function App() {
         <div className="app__nav">
           <Nav />     
         </div>
-        <div className="app__about">
-          <About />
+        <div className="app__about_container">
+          <div className="app__about">
+            <About />
+          </div>
         </div>
       </>
     );

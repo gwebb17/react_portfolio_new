@@ -1,10 +1,10 @@
-
-const navBannerImage = (sizeWidth, sizeHeight) => {
-    let enteredWidth = sizeWidth;
-    let enteredHeight = sizeHeight;
+const githubIconWhite = (sizeWidthGit, sizeHeightGit) => {
+    let enteredWidth = sizeWidthGit;
+    let enteredHeight = sizeHeightGit;
     return (
-        <img src={process.env.PUBLIC_URL + "/react_portfolio_wallpaper.jpg"} alt="nav banner logo" width={enteredWidth} height={enteredHeight} />
+        <img src={process.env.PUBLIC_URL + "/github_icon_white.svg.png"} width={enteredWidth} height={enteredHeight} />
     )
 }
 
-export default navBannerImage;
+//to export more just add to below {} list separate by comma
+export {githubIconWhite};
