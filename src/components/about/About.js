@@ -10,8 +10,9 @@ const About = () => {
                     <img src={process.env.PUBLIC_URL + "/press_photo_2.jpg"} alt='about section image'/>
                 </div>
                 <div className='about__top_row_link_one'>
-                    {githubIconWhite(40, 40)}
-                </div>
+                <a href="https://github.com/gwebb17?tab=repositories"><img src={process.env.PUBLIC_URL + "/github_icon.png"} 
+                    alt='about section image'/></a>                 
+                </div>           
             </div>        
             
             <h2 className='about__header_text'>

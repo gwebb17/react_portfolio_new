@@ -14,8 +14,11 @@
     justify-content: space-between;
 }
 
-.about__top_row_link_one{
-
+.about__top_row_link_one img{
+    width: 100px;
+    background-color: #DE3163;
+    border-radius: 6px;
+    padding: 3px 3px 3px 3px;
 }
 
 .about__header_text{
