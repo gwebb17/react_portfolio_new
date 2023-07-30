@@ -17,7 +17,7 @@ const About = () => {
                         <a href="https://github.com/gwebb17?tab=repositories"><img src={process.env.PUBLIC_URL + "/github_icon.png"} alt='about section image'/></a>                 
                     </div>
                     <div className='about__top_row_link_two'>
-                        <a href="https://funkyouter.space"><img src={process.env.PUBLIC_URL + "/something"} alt='FOS logo'/></a>
+                        <a href="https://www.linkedin.com/in/grant-webb17/"><img src={process.env.PUBLIC_URL + "/linked_in.png"} alt='LinkedIn Logo'/></a>
                     </div>
                     <div className='about__top_row_link_three'>
                         <a href="https://www.instagram.com/oligarchywithers/">{instaIcon(100, 100)}</a>
@@ -33,7 +33,7 @@ const About = () => {
                         My name is Grant Webb, based in Portland OR 
                     </p>
                     < p className='p_text_line_two'>
-                        I love front-end web development
+                        I'm passionate about programming and music
                     </p>
                     <p className='p_text_line_three'>
                         Currently a full-stack developer for <a href="https://funkyouter.space"></a>Funky Outer Space

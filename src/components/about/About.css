@@ -15,23 +15,46 @@
 }
 
 .about__top_row_link_one img{
-    width: 100px;
+    width: 100%;
     background-color: #DE3163;
     border-radius: 6px;
     padding: 3px 3px 3px 3px;
 }
 
-.about__top_row_link_three img{
-    width: 100px;
+/*Note that you need to target the image by adding 'img' to the selector
+otherwise it won't apply correctly*/
+.about__top_row_link_one img:hover{
+    background-color: floralwhite;
+}
+
+.about__top_row_link_two img{
+    width: 100%;
     background-color: #DE3163;
     border-radius: 6px;
     padding: 3px 3px 3px 3px;
+}
+
+.about__top_row_link_two img:hover{
+    background-color: floralwhite;
+}
+
+.about__top_row_link_three img{
+    width: 100%;
+    background-color: #DE3163;
+    border-radius: 6px;
+    padding: 3px 3px 3px 3px;
+}
+
+.about__top_row_link_three img:hover{
+    background-color: floralwhite;
+
 }
 
 .about__icons_container{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    width: 21%;
 }
 
 .about__header_text{
