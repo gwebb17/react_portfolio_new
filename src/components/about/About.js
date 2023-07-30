@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState, useRef, useContext } from 'react';
 import styles from './About.css';
-import { githubIconWhite } from '../../utils';
+import { githubIconWhite, instaIcon } from '../../utils';
 import AppContext from '../../AppContext.js';
 
 
@@ -19,6 +19,9 @@ const About = () => {
                     <div className='about__top_row_link_two'>
                         <a href="https://funkyouter.space"><img src={process.env.PUBLIC_URL + "/something"} alt='FOS logo'/></a>
                     </div>
+                    <div className='about__top_row_link_three'>
+                        <a href="https://www.instagram.com/oligarchywithers/">{instaIcon(100, 100)}</a>
+                    </div>
                 </div>
             </div>
             <div className='about__second_row_container'>
@@ -27,10 +30,10 @@ const About = () => {
                 </h2>
                 <div className='about__left_text_container'>
                     <p className='p_text_line_one'>
-                        I've got a lifelong love of creating and learning
+                        My name is Grant Webb, based in Portland OR 
                     </p>
                     < p className='p_text_line_two'>
-                        This manifests in the form of building websites or creating music
+                        I love front-end web development
                     </p>
                     <p className='p_text_line_three'>
                         Currently a full-stack developer for <a href="https://funkyouter.space"></a>Funky Outer Space

@@ -21,6 +21,19 @@
     padding: 3px 3px 3px 3px;
 }
 
+.about__top_row_link_three img{
+    width: 100px;
+    background-color: #DE3163;
+    border-radius: 6px;
+    padding: 3px 3px 3px 3px;
+}
+
+.about__icons_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
 .about__header_text{
     font-weight: 200;
     font-family: 'Exo', sans-serif;
