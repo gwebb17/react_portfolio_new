@@ -4,30 +4,29 @@ import Nav from 'components/navbar/Nav';
 import About from 'components/about/About';
 import Resume from 'components/resume/Resume';
 import Swiper from 'swiper';
+import SwiperSlide from 'swiper/react';
 import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 //*Initialize Swiper*//
-//https://swiperjs.com/get-started
 const swiper = new Swiper('.swiper',{
   modules: [Navigation, Pagination],  //configure swiper to use these modules
-  direction: 'vertical',
-  loop: true,
+  direction: 'horizontal',
+  loop: true,  //true makes page scroll infinite
 
-  // If we need pagination
+  spaceBetween: 0,
+  slidesPerView: 1,
   pagination: {
     el: '.swiper-pagination',
   },
 
-  // Navigation arrows
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
 
-  // And if we need scrollbar
   scrollbar: {
     el: '.swiper-scrollbar',
   },
@@ -51,13 +50,11 @@ function App() {
                     <Resume />
                 </div>
             </div>
-
-            <div className='swiper-pagination'></div>
-            <div className='swiper-button-prev'></div>
-            <div className='swiper-button-next'></div>
-            <div className='swiper-scrollbar'></div>
-
           </div>
+          <div className='swiper-pagination'></div>
+          <div className='swiper-button-prev'></div>
+          <div className='swiper-button-next'></div>
+          <div className='swiper-scrollbar'></div>
         </div>
       </>
     );
