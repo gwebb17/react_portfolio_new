@@ -18,6 +18,16 @@ const Resume = () => {
                 ullamcorper. Gravida cum sociis natoque penatibus et. Risus ultricies tristique nulla aliquet enim tortor at. Arcu bibendum at varius vel 
                 pharetra. Pellentesque habitant morbi tristique senectus et.
             </p>
+
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slide_1">Slide 1</div>
+                    <div class="swiper-slide slide_2">Slide 2</div>
+                    <div class="swiper-slide slide_3">Slide 3</div>
+                    <div class="swiper-slide slide_4">Slide 4</div>
+                    <div class="swiper-slide slide_5">Slide 5</div>
+                </div>
+            </div>
         </div>
     )
 }

@@ -6,13 +6,5 @@ const githubIconWhite = (sizeWidthGit, sizeHeightGit) => {
     )
 }
 
-const instaIcon = (sizeWidthIG, sizeHeightIG) => {
-    let enteredWidth = sizeWidthIG;
-    let enteredHeight = sizeHeightIG;
-    return (
-        <img src={process.env.PUBLIC_URL + "/ig_icon.svg"} width={enteredWidth} height={enteredHeight} />
-    )
-}
-
 //to export more just add to below {} list separate by comma
-export {githubIconWhite, instaIcon};
+export {githubIconWhite};

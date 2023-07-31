@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState, useRef, useContext } from 'react';
 import styles from './About.css';
-import { githubIconWhite, instaIcon } from '../../utils';
+import { githubIconWhite } from '../../utils';
 import AppContext from '../../AppContext.js';
 
 
@@ -14,13 +14,13 @@ const About = () => {
                 </div>
                 <div className='about__icons_container'>
                     <div className='about__top_row_link_one' id='about__id'>
-                        <a href="https://github.com/gwebb17?tab=repositories"><img src={process.env.PUBLIC_URL + "/github_icon.png"} alt='about section image'/></a>                 
+                        <a href="https://github.com/gwebb17?tab=repositories"><img src={process.env.PUBLIC_URL + "/github_icon.png"} alt='portrait'/></a>                 
                     </div>
                     <div className='about__top_row_link_two'>
-                        <a href="https://www.linkedin.com/in/grant-webb17/"><img src={process.env.PUBLIC_URL + "/linked_in.png"} alt='LinkedIn Logo'/></a>
+                        <a href="https://www.linkedin.com/in/grant-webb17/"><img src={process.env.PUBLIC_URL + "/linked_in_icon.png"} alt='LinkedIn Logo'/></a>
                     </div>
                     <div className='about__top_row_link_three'>
-                        <a href="https://www.instagram.com/oligarchywithers/">{instaIcon(100, 100)}</a>
+                        <a href="https://www.instagram.com/oligarchywithers/"><img src={process.env.PUBLIC_URL + "/ig_icon.png"} alt='IG Logo'/></a>
                     </div>
                 </div>
             </div>
