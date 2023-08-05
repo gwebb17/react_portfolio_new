@@ -10,7 +10,7 @@ const About = () => {
         <div className='about__outer_container'>
             <div className='about__top_row_container'>
                 <div className='about__text_image'>
-                    <img src={process.env.PUBLIC_URL + "/press_photo_2.jpg"} alt='about section image'/>
+                    <img src={process.env.PUBLIC_URL + "/press_photo_2.jpg"} alt='portrait'/>
                 </div>
                 <div className='about__icons_container'>
                     <div className='about__top_row_link_one' id='about__id'>
