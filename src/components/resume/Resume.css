@@ -1,35 +1,59 @@
 .resume__outer_container{
-    background-color: #28282B;
-    padding-top: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
-    padding-left: 20px;
-    margin-top: 200px;
+  background-color: #28282B;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  margin-top: 200px;
 }
 
 .resume__header_text{
-    font-weight: 200;
-    font-family: 'Exo', sans-serif;
-    font-size: 34px;
-    color: floralwhite;
-    -webkit-animation: glow 1s ease-in-out infinite alternate;
-    -moz-animation: glow 1s ease-in-out infinite alternate;
-    animation: glow 1s ease-in-out infinite alternate;
+  font-weight: 200;
+  font-family: 'Exo', sans-serif;
+  font-size: 34px;
+  color: floralwhite;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+  padding-right: 10%;
 }
 
-.resume__text{
+.resume__skills_area{
     font-family: 'Exo', sans-serif;
     font-weight: 500;
     color: floralwhite;
 }
 
+.resume__skills_area_two{
+  font-family: 'Exo', sans-serif;
+  font-weight: 500;
+  color: floralwhite;
+}
+
+.resume__row_one{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.resume__text_two{
+  font-family: 'Exo', sans-serif;
+  font-weight: 500;
+  color: floralwhite;
+}
+
+.resume__text_three{
+  font-family: 'Exo', sans-serif;
+  font-weight: 500;
+  color: floralwhite;
+}
+
 /*GLOW LINK TEXT*/
 @keyframes glow {
-    from {
-      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
-    }
-    
-    to {
-      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
-    }
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
 }

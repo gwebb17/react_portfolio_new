@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import './App.css';
 import Nav from 'components/navbar/Nav';
 import About from 'components/about/About';
-import Resume from 'components/resume/Resume';
+import TechnicalResume from 'components/resume/Resume';
 //SWIPER
 import Swiper from 'swiper';
 import { Navigation, Pagination, Parallax } from 'swiper/modules';
@@ -74,7 +74,7 @@ function App() {
           <div className='swiper-slide'>
             <div className='app__resume_container'>
               <div className='app__resume'>
-                  <Resume />
+                  <TechnicalResume />
               </div>
             </div>
           </div>

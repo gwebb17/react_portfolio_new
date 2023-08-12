@@ -1,9 +1,10 @@
 import styles from './Nav.css';
 import { useState, useRef, useContext, useEffect } from 'react';
 import AppContext from '../../AppContext.js';
+import { musicNote } from 'utils';
 
 const Nav = () => {
-    const linksForButtons = ["about", "resume", "contact"];
+    const linksForButtons = ["about", "resume (technical)", `resume ${musicNote}`, "contact"];
     const linkMap = {      //apparently these ids can be located without context, ref, or importing between different components
         about: 'about__id',
         resume: 'resume__id',

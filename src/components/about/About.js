@@ -36,7 +36,7 @@ const About = () => {
                         I'm passionate about programming and music
                     </p>
                     <p className='p_text_line_three'>
-                        Currently a full-stack developer for <a href="https://funkyouter.space" className={'fos_glow_link'}>Funky Outer Space</a>
+                        Currently a full-stack developer for <a href="https://funkyouter.space" target="_blank" className={'fos_glow_link'}>Funky Outer Space</a>
                     </p>
                     <p className='p_text_line_three'>
                         Open for collaboration {/*make collaboration a link to contact section*/}
