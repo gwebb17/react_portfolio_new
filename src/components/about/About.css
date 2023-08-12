@@ -16,7 +16,7 @@
 
 .about__top_row_link_one img{
     width: 100%;
-    background-color: #DE3163;
+    background-color: #AA336A;
     border-radius: 6px;
     padding: 3px 3px 3px 3px;
 }
@@ -29,7 +29,7 @@ otherwise it won't apply correctly*/
 
 .about__top_row_link_two img{
     width: 100%;
-    background-color: #DE3163;
+    background-color: #AA336A;
     border-radius: 6px;
     padding: 3px 3px 3px 3px;
 }
@@ -40,7 +40,7 @@ otherwise it won't apply correctly*/
 
 .about__top_row_link_three img{
     width: 100%;
-    background-color: #DE3163;
+    background-color: #AA336A;
     border-radius: 6px;
     padding: 3px 3px 3px 3px;
 }
@@ -62,6 +62,9 @@ otherwise it won't apply correctly*/
     font-family: 'Exo', sans-serif;
     font-size: 34px;
     color: floralwhite;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
 }
 
 .about__text_image img{
@@ -73,3 +76,26 @@ otherwise it won't apply correctly*/
     font-weight: 500;
     color: floralwhite;
 }
+
+/*GLOW LINK TEXT*/
+@keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+}
+
+.fos_glow_link{
+    color: floralwhite;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+.fos_glow_link:link { text-decoration: none; }
+.fos_glow_link:visited { text-decoration: none; }
+.fos_glow_link:hover { text-decoration: none; }
+.fos_glow_link:active { text-decoration: none; }

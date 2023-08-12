@@ -8,6 +8,7 @@
 .app__about{
   margin-right: 20%;
   margin-left: 20%;
+  margin-bottom: 10px; /*for bullets*/
 }
 
 .app__resume_container{
@@ -23,15 +24,15 @@
 }
 
 /*SWIPER*/
-.swiper {
-
-
+.swiper-pagination-bullet {
+  opacity: 1;
+  background-color: #28282B !important; /*seems to be only way to override default blue button color*/
 }
 
-.swiper-slide{
-
+.swiper-button-prev{
+  color: #28282B !important;
 }
 
-.swiper-pagination{
-  position: static;
+.swiper-button-next{
+  color: #28282B !important;
 }

@@ -3,9 +3,8 @@ import { useState, useRef, useContext, useEffect } from 'react';
 import AppContext from '../../AppContext.js';
 
 const Nav = () => {
-    const linksForButtons = ["top", "about", "resume", "contact"];
-    const linkMap = {
-        top: 'nav__id',       //apparently these ids can be located without context, ref, or importing between different components
+    const linksForButtons = ["about", "resume", "contact"];
+    const linkMap = {      //apparently these ids can be located without context, ref, or importing between different components
         about: 'about__id',
         resume: 'resume__id',
         contact: 'contact__id'

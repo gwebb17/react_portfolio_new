@@ -12,34 +12,41 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 //init swiper
-const swiper = new Swiper('.swiper', {
-  // configure Swiper to use modules
-  modules: [Navigation, Pagination, Parallax],
+const SwiperAfterMount = () => {
+  useEffect(() => {
+    const swiper = new Swiper('.swiper', {
+      // configure Swiper to use modules
+      modules: [Navigation, Pagination, Parallax],
+      
+      spaceBetween: 0,
+      slidesPerView: 1,
+      observer: true,
+      observeParents: true,
+      parallax:true,
+    
+      direction: 'horizontal',
+      loop: true,
+      speed: 3200,
+    
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },      
+    });
+  },[]);
 
-  observer: true,
-  observeParents: true,
-  parallax:true,
-
-  direction: 'horizontal',
-  loop: false,
-  speed: 2500,
-
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
-
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-});
-//SWIPER BUG:
-//page is mounting twice on refresh and once when IDE saves
-//when page mounts twice the pagination and buttons dont work
-//when page mounts once the pagination and buttons DO work
-//possible solution could be using React way again and splitting Swiper into its own component
-
+  //Have to return something in order to use the component SwiperAfterMount in the below App component
+  //without calling SwiperAfterMount we don't initialize it properly hence the break on refresh bug
+  return(
+    <div>
+    </div>
+  )
+}
 
 function swiperRightClicked() {
   console.log("Right Swiper button clicked")
@@ -49,12 +56,9 @@ function swiperLeftClicked() {
 }
 
 function App() {
-  useEffect(() => {
-    console.log("mounted")
-  },[]);
-
   return (
     <>
+      <SwiperAfterMount/>
       <div className='app__nav'>
         <Nav />     
       </div>
