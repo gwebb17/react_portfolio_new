@@ -38,7 +38,18 @@ const SwiperAfterMount = () => {
         prevEl: '.swiper-button-prev',
       },      
     });
+
+    //make swiper slide to desired slide
+    //currently does work for about but only seems to be when swiper thinks we are on 2nd slide with buttons
+    var slideToAbout = document.getElementById('about_id');
+    slideToAbout?.addEventListener('click', function(){
+      var aboutIndex = 0;
+      swiper.slideTo(aboutIndex);
+      console.log("slideToAboutRan");
+    })
   },[]);
+
+  
 
   //Have to return something in order to use the component SwiperAfterMount in the below App component
   //without calling SwiperAfterMount we don't initialize it properly hence the break on refresh bug
@@ -54,6 +65,7 @@ function swiperRightClicked() {
 function swiperLeftClicked() {
   console.log("Left Swiper button clicked")
 }
+
 
 function App() {
   return (

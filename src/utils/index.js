@@ -8,7 +8,7 @@ const githubIconWhite = (sizeWidthGit, sizeHeightGit) => {
 
 const musicNote = () => {
     return (
-        <img src={process.env.PUBLIC_URL + "/music_note.png"}/>
+        <img src={process.env.PUBLIC_URL + "/note.png"}/>
     )
 }
 
